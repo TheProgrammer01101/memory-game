@@ -1,0 +1,11 @@
+#board {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  height: 20vw;
+  width: 20vw;
+  margin: 1rem;
+  background-color: red;
+}
