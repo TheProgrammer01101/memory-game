@@ -85,6 +85,7 @@ selectElement.addEventListener("change", () => {
           emoji = "👻";
           break;
       }
+      box.innerHTML = emoji;
       if (match.length >= 2) {
         if (match[0] == match[1]) {
           let matchingBox = document.querySelectorAll(`[data-number='${box.dataset.number}']`);
@@ -107,9 +108,6 @@ selectElement.addEventListener("change", () => {
           console.log("non match")
         }
       }
-      // box.innerHTML = emoji;
-
-
     });
   })
 })
