@@ -91,14 +91,15 @@ selectElement.addEventListener("change", () => {
 
           matchingBox.forEach(mb => {
             mb.innerHTML = emoji;
+            mb.dataset.done = "true";
           })
 
-
+          console.log("yes")
           match = [];
         }
         else {
           boxes.forEach(b => {
-            if (b.innerHTML != "") {
+            if (b.dataset.done != "true") {
               b.innerHTML = "";
             }
           })
@@ -106,7 +107,7 @@ selectElement.addEventListener("change", () => {
           console.log("non match")
         }
       }
-      box.innerHTML = emoji;
+      // box.innerHTML = emoji;
 
 
     });
